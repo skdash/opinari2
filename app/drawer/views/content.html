@@ -1,0 +1,62 @@
+<div ng-controller="DrawerController">
+
+  <super-navbar>
+    <super-navbar-title>
+      Marty McFly
+    </super-navbar-title>
+  </super-navbar>
+
+  <div class="padding">
+<script type="text/javascript">
+function myQuestions()
+{
+var view = new supersonic.ui.View("example#my-questions");
+supersonic.ui.layers.push(view);
+supersonic.ui.drawers.close().then( function() {
+supersonic.logger.debug("Drawer was closed");
+});
+}
+function myProfile()
+{
+var view = new supersonic.ui.View("example#my-profile");
+supersonic.ui.layers.push(view);
+supersonic.ui.drawers.close().then( function() {
+supersonic.logger.debug("Drawer was closed");
+});
+}
+function mySettings()
+{
+var view = new supersonic.ui.View("example#settings-page");
+supersonic.ui.layers.push(view);
+supersonic.ui.drawers.close().then( function() {
+supersonic.logger.debug("Drawer was closed");
+});
+}
+
+</script>
+<div class="list">
+
+  <a class="item item-icon-left" href="#" onclick="myQuestions()">
+    <i class="icon super-android-archive"></i>
+    My Questions
+  </a>
+
+  <a class="item item-icon-left" href="#" onclick="myProfile()">
+    <i class="icon super-person"></i>
+  My Profile  
+  </a>
+
+  <a class="item item-icon-left" href="#" onclick="mySettings()">
+    <i class="icon super-gear-a"></i>
+    Settings
+  </a>
+  <a class="item item-icon-left" href="#" onclick="myQuestions()">
+    <i class="icon super-log-out"></i>
+      Log Out
+  </a>
+
+</div>
+
+  </div>
+
+</div>

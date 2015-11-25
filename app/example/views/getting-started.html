@@ -1,0 +1,87 @@
+<div ng-controller="IndexController" >
+
+
+<div class="padding">
+
+	<super-navbar>
+
+<super-navbar-button ng-click="supersonic.ui.drawers.open('left')">
+&equiv;
+</super-navbar-button>
+
+
+<super-navbar-title  class="demo-pricing demo-pricing-1" style="text-align:center;">
+  <div style="text-align:center;"><b>Home</b></div>
+</super-navbar-title>
+
+	</super-navbar>
+
+<script type="text/javascript">
+ var clicks = document.getElementById(".clicks").innerHTML.value;
+	function clickADD() {
+		clicks += 1;
+		document.getElementById(".clicks").innerHTML = clicks;
+ }
+	function clickMINUS() {
+		clicks -= 1;
+		document.getElementById(".clicks").innerHTML = clicks;
+ }
+
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0">
+
+
+	<div class="list card" >
+		<a href="japRest.html" target="_self" class="item item-body getting-started-card" style="word-wrap: break-word;">
+
+		 <div style="float:left; width:90%;"> I am travelling to Charolette. Which would be a better choice for Japanese food over there?</div>
+			<div class="voting-icons" style="float:right;">
+			<i class="icon super-ios-arrow-up" onclick="clickMINUS()"></i><br />
+			9<br />
+			<i class="icon super-ios-arrow-down" onclick="clickMINUS()"></i>
+			</div>
+
+	  </a>
+
+	  <a href="#" class="item item-body getting-started-card">
+		 <div style="float:left; width:90%;">  Date night movie selection dilemna.</div>
+			<div class="voting-icons" style="float:right;">
+			<i class="icon super-ios-arrow-up" onclick="clickMINUS()"></i><br />
+			5<br />
+			<i class="icon super-ios-arrow-down" onclick="clickMINUS()"></i>
+			</div>
+	  </a>
+	  <a href="promDress.html" class="item item-body getting-started-card">
+		<div style="float:left; width:90%;">   Picking a dress for prom night? A or B.</div>
+			<div class="voting-icons" style="float:right;">
+			<i class="icon super-ios-arrow-up" onclick="clickMINUS()"></i><br />
+			9<br />
+			<i class="icon super-ios-arrow-down" onclick="clickMINUS()"></i>
+			</div>
+	  </a>
+	  <a href="suggestions.html" class="item item-body getting-started-card">
+		 <div style="float:left; width:90%;">  Suggestions for thanksgiving holiday trip</div>
+			<div class="voting-icons" style="float:right;">
+			<i class="icon super-ios-arrow-up" onclick="clickMINUS()"></i><br />
+			8<br />
+			<i class="icon super-ios-arrow-down" onclick="clickMINUS()"></i>
+			</div>
+	  </a>
+		<a href="japRest.html" target="_self" class="item item-body getting-started-card" style="word-wrap: break-word;">
+	   <div style="float:left; width:90%;">  Batman or Superman?</div>
+			<div class="voting-icons" style="float:right;">
+			<i class="icon super-ios-arrow-up"></i><br />
+			1<br />
+			<i class="icon super-ios-arrow-down"></i>
+			</div>
+	</a>
+
+	</div>
+
+<a href="newpost.html"><img src="http://theworldnewsmedia.org/file/view/new%20post%20button%2001.JPG/481838736/new%20post%20button%2001.JPG" class="fixedbutton"></a>
+
+
+</div>
+</div>
+
