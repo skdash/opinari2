@@ -4,13 +4,24 @@
 </super-navbar-title>
   </super-navbar>
 
-  <label class="item item-input item-floating-label item-icon-right">
+  <label class="item item-input item-floating-label item-icon-right" style="height:200px;">
     <span class="input-label">What's on your mind?</span>
     <input type="text" placeholder="What's on your mind?">
     <i class="icon super-ios-camera"></i>
   </label>
 
 <div class="padding">
+     <ul class="list">
+  <li class="item item-toggle">
+     Go Anonymous
+     <label class="toggle toggle-balanced">
+       <input type="checkbox">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li>
+</ul>
 <super-modal-show view-id="navigation-modalOptions" class="button button-block button-positive">
     Add Options
 </super-modal-show>
@@ -19,7 +30,7 @@
     Select Tags
 </super-modal-show>
 
-<super-modal-show view-id="example-afterask" button class="button button-block button-positive">
-  Ask
-</super-modal-show>
+   <a class="button button-block button-positive" href="afterask.html">
+    Ask
+  </a>
 </div>
